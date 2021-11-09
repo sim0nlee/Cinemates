@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Cinemates.iml" filepath="$PROJECT_DIR$/.idea/Cinemates.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Sorgente/Client Mobile/Client Mobile.iml" filepath="$PROJECT_DIR$/Sorgente/Client Mobile/Client Mobile.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Sorgente/Sorgente.iml" filepath="$PROJECT_DIR$/Sorgente/Sorgente.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Sorgente/Client Mobile/main/main.iml" filepath="$PROJECT_DIR$/Sorgente/Client Mobile/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Source Code/Mobile App/Client Mobile.iml" filepath="$PROJECT_DIR$/Source Code/Mobile App/Client Mobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Source Code/Sorgente.iml" filepath="$PROJECT_DIR$/Source Code/Sorgente.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Source Code/Mobile App/main/main.iml" filepath="$PROJECT_DIR$/Source Code/Mobile App/main/main.iml" />
     </modules>
   </component>
 </project>
