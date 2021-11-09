@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:contentDescription="Home"
+        android:icon="@drawable/ic_navbar_home"/>
+
+    <item
+        android:id="@+id/nav_friends"
+        android:title="Social"
+        android:icon="@drawable/ic_navbar_friends"/>
+
+    <item
+        android:id="@+id/nav_search"
+        android:title="Ricerca"
+        android:icon="@drawable/ic_navbar_search"/>
+
+    <item
+        android:id="@+id/nav_lists"
+        android:title="Le mie liste"
+        android:icon="@drawable/ic_navbar_list"/>
+
+    <item
+        android:id="@+id/nav_user"
+        android:title="Profilo"
+        android:contentDescription="User profile navigation button"
+        android:icon="@drawable/ic_navbar_user"/>
+
+</menu>

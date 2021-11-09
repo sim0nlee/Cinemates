@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegistrationActivity">
+
+    <TextView
+        android:id="@+id/cinemates_textview2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/courierprime_regular"
+        android:text="CINEMATES"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <EditText
+        android:id="@+id/password_registrazione_input"
+        android:layout_width="275dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/segoeui"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/text_grey"
+        app:layout_constraintEnd_toEndOf="@+id/email_registrazione_input"
+        app:layout_constraintStart_toStartOf="@+id/email_registrazione_input"
+        app:layout_constraintTop_toBottomOf="@+id/email_registrazione_input" />
+
+    <EditText
+        android:id="@+id/email_registrazione_input"
+        android:layout_width="275dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/segoeui"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/text_grey"
+        app:layout_constraintEnd_toEndOf="@+id/cognome_registrazione_input"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cognome_registrazione_input"
+        app:layout_constraintTop_toBottomOf="@+id/cognome_registrazione_input" />
+
+
+    <EditText
+        android:id="@+id/nome_registrazione_input"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/segoeui"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/text_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cinemates_textview2" />
+
+    <EditText
+        android:id="@+id/cognome_registrazione_input"
+        android:layout_width="275dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/segoeui"
+        android:hint="Cognome"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/text_grey"
+        app:layout_constraintEnd_toEndOf="@+id/nome_registrazione_input"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nome_registrazione_input"
+        app:layout_constraintTop_toBottomOf="@+id/nome_registrazione_input" />
+
+    <Button
+        android:id="@+id/goto_registration_button"
+        android:layout_width="275dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/custom_yellow_button"
+        android:fontFamily="@font/segoeui"
+        android:includeFontPadding="false"
+        android:paddingTop="2dp"
+        android:paddingBottom="4dp"
+        android:text="REGISTRATI"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:backgroundTint="@android:color/transparent"
+        app:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="@+id/password_registrazione_input"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/password_registrazione_input"
+        app:layout_constraintTop_toBottomOf="@+id/password_registrazione_input" />
+
+    <TextView
+        android:id="@+id/non_hai_un_account_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="HAI GIÀ UN ACCOUNT?"
+        android:textSize="9sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/torna_al_login_btn"
+        app:layout_constraintEnd_toStartOf="@+id/divider2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/divider1"
+        app:layout_constraintTop_toBottomOf="@+id/goto_registration_button" />
+
+    <Button
+        android:id="@+id/torna_al_login_btn"
+        android:layout_width="275dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="88dp"
+        android:background="@color/light_light_grey"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp"
+        android:text="TORNA AL LOGIN"
+        android:fontFamily="@font/segoeui"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/goto_registration_button"
+        app:layout_constraintStart_toStartOf="@+id/goto_registration_button"
+        app:layout_constraintTop_toBottomOf="@+id/goto_registration_button" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:background="@color/light_grey"
+        app:layout_constraintBottom_toTopOf="@+id/torna_al_login_btn"
+        app:layout_constraintStart_toStartOf="@+id/goto_registration_button"
+        app:layout_constraintTop_toBottomOf="@+id/goto_registration_button" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:background="@color/light_grey"
+        app:layout_constraintBottom_toTopOf="@+id/torna_al_login_btn"
+        app:layout_constraintEnd_toEndOf="@+id/goto_registration_button"
+        app:layout_constraintTop_toBottomOf="@+id/goto_registration_button"
+        app:layout_constraintVertical_bias="0.511" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

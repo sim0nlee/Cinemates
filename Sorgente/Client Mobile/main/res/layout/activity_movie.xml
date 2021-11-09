@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MovieActivity">
+
+    <ScrollView
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/film_imgview"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:src="@drawable/movie_backdrop_placeholder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="Movie backdrop" />
+
+            <TextView
+                android:id="@+id/titolo_txtview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/segoeuilight"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/film_imgview" />
+
+            <TextView
+                android:id="@+id/registi_txtview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/segoeuilight"
+                android:text=""
+                android:textColor="@color/text_grey"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titolo_txtview" />
+
+            <TextView
+                android:id="@+id/durata_txtview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textColor="@color/text_grey"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/registi_txtview" />
+
+            <View
+                android:id="@+id/durata_divider"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/text_grey"
+                app:layout_constraintStart_toEndOf="@+id/durata_txtview"
+                app:layout_constraintTop_toTopOf="@+id/durata_txtview" />
+
+            <TextView
+                android:id="@+id/generi_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="220dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/text_grey"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/durata_divider"
+                app:layout_constraintTop_toBottomOf="@+id/registi_txtview" />
+
+            <View
+                android:id="@+id/generi_divider"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/text_grey"
+                app:layout_constraintStart_toEndOf="@+id/generi_txtview"
+                app:layout_constraintTop_toTopOf="@+id/generi_txtview" />
+
+
+            <TextView
+                android:id="@+id/anno_txtview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:text=""
+                android:textColor="@color/text_grey"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/generi_divider"
+                app:layout_constraintTop_toBottomOf="@+id/registi_txtview" />
+
+            <ImageButton
+                android:id="@+id/favorite_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/background_color"
+                android:src="@drawable/ic_heart_empty"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/generi_txtview" />
+
+            <ImageButton
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/background_color"
+                android:src="@drawable/ic_bookmark_empty"
+                android:tint="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/favorite_button"
+                app:layout_constraintTop_toBottomOf="@+id/generi_txtview" />
+
+            <TextView
+                android:id="@+id/descrizione_txtview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/background_color"
+                android:fontFamily="@font/segoeuilight"
+                android:text=""
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/favorite_button" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
