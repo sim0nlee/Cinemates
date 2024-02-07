@@ -1,6 +1,7 @@
 # Cinemates
 
-![WhatsApp Image 2024-02-07 at 21 16 56](https://github.com/sim0nlee/Cinemates/assets/94008546/e2f0e9ac-fa7d-46ac-978d-0a1225e8207e)                       ![WhatsApp Image 2024-02-07 at 21 18 01](https://github.com/sim0nlee/Cinemates/assets/94008546/7be4889f-ec32-4c05-8c80-ee0b0dfa608a)
+![WhatsApp Image 2024-02-07 at 21 18 01](https://github.com/sim0nlee/Cinemates/assets/94008546/7be4889f-ec32-4c05-8c80-ee0b0dfa608a)
+![WhatsApp Image 2024-02-07 at 21 16 56](https://github.com/sim0nlee/Cinemates/assets/94008546/e2f0e9ac-fa7d-46ac-978d-0a1225e8207e)                      
 
 
 Cinemates was developed in a simulated process of Software Engineer - Stakeholder professional relationship. The request was to create a movie-based social network as an Android application, accompanied by an in-depth documentation and usability analysis of the software through use-case diagrams, mock ups, Cockburn tables, etc. The following requirements had to be satisfied:
